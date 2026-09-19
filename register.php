@@ -1,15 +1,7 @@
 <?php
 include("db.php");
 
-<form action="register.php" method="POST">
 
-<input type="text" name="username" placeholder="Enter Username" required>
-
-<input type="password" name="password" placeholder="Enter Password" required>
-
-<button type="submit">Register</button>
-
-</form>
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -24,3 +16,12 @@ else{
     echo "Error: " . mysqli_error($conn);
 }
 ?>
+<form action="register.php" method="POST">
+
+<input type="text" name="username" placeholder="Enter Username" required>
+
+<input type="password" name="password" placeholder="Enter Password" required>
+
+<button type="submit">Register</button>
+
+</form>
